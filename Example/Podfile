@@ -1,0 +1,12 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'SYZAliPaySDK_Example' do
+  pod 'SYZAliPaySDK', :path => '../'
+
+  target 'SYZAliPaySDK_Tests' do
+    inherit! :search_paths
+
+  end
+end

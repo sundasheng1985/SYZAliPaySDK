@@ -1,0 +1,800 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08D894EBD568FCC69786254D727FEFBE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0613A582A8F6C38F1C86436F5921605B /* UIKit.framework */; };
+		16A443C21D7584B76CD8F845866DF155 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A9B90CECF619E71DEF53EADDF29902 /* Foundation.framework */; };
+		18681AD9B2D3ED72089A21E9FCE1C8DA /* Order.m in Sources */ = {isa = PBXBuildFile; fileRef = 9634BB1B63BCF86C3AE9977C97C0E31C /* Order.m */; };
+		1D248DC240D4BD6249AE78CF61637B6D /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 881F64EAEFF80F0858BDE8CE62D4DA7E /* CoreMotion.framework */; };
+		279C744B3B75AF72101D3D9BEAF1DC37 /* Pods-SYZAliPaySDK_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BED612792AAA69C39C361F45320A8B45 /* Pods-SYZAliPaySDK_Tests-dummy.m */; };
+		2CA1106AA19F7B370C62808C7D3076AC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 327421D25DCA3348DD5FDC1AD255A31C /* CoreGraphics.framework */; };
+		466F83345E402353CF485C5FAFE5BA85 /* Pods-SYZAliPaySDK_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 01F43844EF6C84EF3A183E37E682F9AB /* Pods-SYZAliPaySDK_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E7481DB8CB1433519A74B7162CAF514 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84FA56489864DBEEEF01602FFFF71861 /* CoreTelephony.framework */; };
+		5E9F9DB5AFF51B03C3D889FACA209BEA /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8291639372CEDEDEA680CC38036686CB /* CoreText.framework */; };
+		5F113FC2CA07C15B7FE055C55634E9E6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A9B90CECF619E71DEF53EADDF29902 /* Foundation.framework */; };
+		98107E75902A11558E02B52C751C3E09 /* Product.h in Headers */ = {isa = PBXBuildFile; fileRef = F9A68E7B84C7001066FBE03B56DF6D48 /* Product.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F9C64BEF0C4EB01C71E546DADF66199 /* Pods-SYZAliPaySDK_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F00CBF82E738A5D289D18DB635E23FA /* Pods-SYZAliPaySDK_Example-dummy.m */; };
+		A2DD98598B287D5715B13DC36AA85484 /* Order.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D1CC8268A619A3BF803169ED88BE6FE /* Order.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A3926080228870D1328BD366A09E9974 /* AlipaySDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 62568A69359D71978AEFDC6E6D1361CD /* AlipaySDK.bundle */; };
+		B4959AB12E65069D057EF2E0877B3C6C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A9B90CECF619E71DEF53EADDF29902 /* Foundation.framework */; };
+		C4AAAE32E17A265A5452FA34B9A340D7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 937E9D148ED6A479E251337F289FD78A /* QuartzCore.framework */; };
+		CBE6B1676D5B57E541838BD58DA5F764 /* Pods-SYZAliPaySDK_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F99B6E57E0A6277DEC1D78C8B3B887D /* Pods-SYZAliPaySDK_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E16D6AAA4B9D18249F07C97D3A1ECC81 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA5B021E05129CE85E3267C4C25180A6 /* SystemConfiguration.framework */; };
+		E963C57216F2D7DEB5918A0908280EE5 /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = B55A5EC77A69F936EE76D534C6C74228 /* Product.m */; };
+		F12DAEAF11569D83F3775A18C20C10AC /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B28F3D57B5347A94914BF8A3E7A16DB5 /* CFNetwork.framework */; };
+		F15B7DE9D2A02745A96715F70A849E29 /* SYZAliPaySDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E16256EB568E20D246A237289FA86AC5 /* SYZAliPaySDK-dummy.m */; };
+		F2451AE1BBA66699E5410F4F5C13E1C7 /* SYZAliPaySDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 834B09A737A96D7E3EF04A69D0866954 /* SYZAliPaySDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		07166312FA50EBCC084DAF4A1F782FE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0ED5958627FE44227D68B9CADF7A2D1F;
+			remoteInfo = SYZAliPaySDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		019650DB14DE246028D37BFCC9E2E440 /* SYZAliPaySDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SYZAliPaySDK.framework; path = SYZAliPaySDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		01F43844EF6C84EF3A183E37E682F9AB /* Pods-SYZAliPaySDK_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SYZAliPaySDK_Tests-umbrella.h"; sourceTree = "<group>"; };
+		0613A582A8F6C38F1C86436F5921605B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		0C4FF6AC771D8C254A2E9EC8BBA8D476 /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlipaySDK.framework; path = SYZAliPaySDK/AlipaySDK.framework; sourceTree = "<group>"; };
+		1B55FAE1C28306F0EA61C4DD1FB48FD2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F00CBF82E738A5D289D18DB635E23FA /* Pods-SYZAliPaySDK_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SYZAliPaySDK_Example-dummy.m"; sourceTree = "<group>"; };
+		22D5D94480AEEEAAAF49E6BACBAF4939 /* Pods-SYZAliPaySDK_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SYZAliPaySDK_Example.modulemap"; sourceTree = "<group>"; };
+		327421D25DCA3348DD5FDC1AD255A31C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		43A9B90CECF619E71DEF53EADDF29902 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		4EE03D027C2E38BEE4044C64BC913226 /* Pods_SYZAliPaySDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SYZAliPaySDK_Tests.framework; path = "Pods-SYZAliPaySDK_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5070FD0B52DDC82F4DCCE4E55ECEA294 /* SYZAliPaySDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SYZAliPaySDK.xcconfig; sourceTree = "<group>"; };
+		5182793146A332C404416F41981EA6B6 /* Pods-SYZAliPaySDK_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SYZAliPaySDK_Tests-resources.sh"; sourceTree = "<group>"; };
+		5F99B6E57E0A6277DEC1D78C8B3B887D /* Pods-SYZAliPaySDK_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SYZAliPaySDK_Example-umbrella.h"; sourceTree = "<group>"; };
+		62568A69359D71978AEFDC6E6D1361CD /* AlipaySDK.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = AlipaySDK.bundle; path = SYZAliPaySDK/AlipaySDK.bundle; sourceTree = "<group>"; };
+		6AE6D217235D3D2E2222D10D72BEC16C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		758B7FEF503685B3AADFBF0F9A25DCC1 /* SYZAliPaySDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SYZAliPaySDK-prefix.pch"; sourceTree = "<group>"; };
+		7FE04278300D16656626521CD172594E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8291639372CEDEDEA680CC38036686CB /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreText.framework; sourceTree = DEVELOPER_DIR; };
+		834B09A737A96D7E3EF04A69D0866954 /* SYZAliPaySDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SYZAliPaySDK-umbrella.h"; sourceTree = "<group>"; };
+		84FA56489864DBEEEF01602FFFF71861 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreTelephony.framework; sourceTree = DEVELOPER_DIR; };
+		881F64EAEFF80F0858BDE8CE62D4DA7E /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreMotion.framework; sourceTree = DEVELOPER_DIR; };
+		89F5242C18489A044B42EA7F289F266A /* Pods-SYZAliPaySDK_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SYZAliPaySDK_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		8F2A8FE130510F477F6BBA60F45A7B6C /* Pods-SYZAliPaySDK_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SYZAliPaySDK_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		937E9D148ED6A479E251337F289FD78A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		944D14BB97D4BBB7951E39E405D8F3A4 /* Pods-SYZAliPaySDK_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SYZAliPaySDK_Example-resources.sh"; sourceTree = "<group>"; };
+		94585418274708A5450D5629F93F8F3C /* Pods-SYZAliPaySDK_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SYZAliPaySDK_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9634BB1B63BCF86C3AE9977C97C0E31C /* Order.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Order.m; path = SYZAliPaySDK/Order.m; sourceTree = "<group>"; };
+		9D1CC8268A619A3BF803169ED88BE6FE /* Order.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Order.h; path = SYZAliPaySDK/Order.h; sourceTree = "<group>"; };
+		9D5396032773DC1DACC44EFD45FAD93B /* SYZAliPaySDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SYZAliPaySDK.modulemap; sourceTree = "<group>"; };
+		9D90726AB340EAD40C2B6A81BBE3348B /* Pods-SYZAliPaySDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SYZAliPaySDK_Example.release.xcconfig"; sourceTree = "<group>"; };
+		A50859FC5389E9895D10BA3C84730303 /* Pods-SYZAliPaySDK_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SYZAliPaySDK_Example-frameworks.sh"; sourceTree = "<group>"; };
+		B28F3D57B5347A94914BF8A3E7A16DB5 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		B55A5EC77A69F936EE76D534C6C74228 /* Product.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Product.m; path = SYZAliPaySDK/Product.m; sourceTree = "<group>"; };
+		BA0C8326BDB0ADCF5C885CD67D142F96 /* Pods-SYZAliPaySDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SYZAliPaySDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		BDA5122B8B9827EF3EAD1A2D1B7B6C5A /* Pods-SYZAliPaySDK_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SYZAliPaySDK_Tests.modulemap"; sourceTree = "<group>"; };
+		BED612792AAA69C39C361F45320A8B45 /* Pods-SYZAliPaySDK_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SYZAliPaySDK_Tests-dummy.m"; sourceTree = "<group>"; };
+		C3013B8F56BDE2003855D08619D94B5E /* Pods-SYZAliPaySDK_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SYZAliPaySDK_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CAB3694F4DE52D5F7B4EBFE475CD16B1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		CBB19812C5734388912956D3810EA6B6 /* Pods-SYZAliPaySDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SYZAliPaySDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		DBFC23CFB42F05AE71CA29734FBA34CA /* Pods-SYZAliPaySDK_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SYZAliPaySDK_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		E16256EB568E20D246A237289FA86AC5 /* SYZAliPaySDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SYZAliPaySDK-dummy.m"; sourceTree = "<group>"; };
+		EC7A77503DB3C2D9D9D4BD754B8960EB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		F2FD085B7813EA0DBA55CB76CDCDA6FB /* Pods_SYZAliPaySDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SYZAliPaySDK_Example.framework; path = "Pods-SYZAliPaySDK_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4DDB0A57CD3AA36B79CEA34DBA633FD /* SYZAliPaySDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = SYZAliPaySDK.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F9A68E7B84C7001066FBE03B56DF6D48 /* Product.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Product.h; path = SYZAliPaySDK/Product.h; sourceTree = "<group>"; };
+		FA5B021E05129CE85E3267C4C25180A6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		FF935912B347D12D3483082074CC8B92 /* Pods-SYZAliPaySDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SYZAliPaySDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		43E0C3E8DBBE0BF4D0104F46EB818A45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F12DAEAF11569D83F3775A18C20C10AC /* CFNetwork.framework in Frameworks */,
+				2CA1106AA19F7B370C62808C7D3076AC /* CoreGraphics.framework in Frameworks */,
+				1D248DC240D4BD6249AE78CF61637B6D /* CoreMotion.framework in Frameworks */,
+				4E7481DB8CB1433519A74B7162CAF514 /* CoreTelephony.framework in Frameworks */,
+				5E9F9DB5AFF51B03C3D889FACA209BEA /* CoreText.framework in Frameworks */,
+				B4959AB12E65069D057EF2E0877B3C6C /* Foundation.framework in Frameworks */,
+				C4AAAE32E17A265A5452FA34B9A340D7 /* QuartzCore.framework in Frameworks */,
+				E16D6AAA4B9D18249F07C97D3A1ECC81 /* SystemConfiguration.framework in Frameworks */,
+				08D894EBD568FCC69786254D727FEFBE /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82817F2271732ED85CF3AFC0296AE1EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16A443C21D7584B76CD8F845866DF155 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F28E21AA164A6C53785B7E29F34F868B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F113FC2CA07C15B7FE055C55634E9E6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A0B2DD033FB6148D8B52A1231EF1BDC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F2FD085B7813EA0DBA55CB76CDCDA6FB /* Pods_SYZAliPaySDK_Example.framework */,
+				4EE03D027C2E38BEE4044C64BC913226 /* Pods_SYZAliPaySDK_Tests.framework */,
+				019650DB14DE246028D37BFCC9E2E440 /* SYZAliPaySDK.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		24002A6670E6882ECD6250D3E60F9CB2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				802948A786A4C076312B9800B1B950AA /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4AA931701F5193EFDE7B02BDA0AD04A9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				62568A69359D71978AEFDC6E6D1361CD /* AlipaySDK.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		719AAFE0732A14815AC4943359CB19C8 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				CAB3694F4DE52D5F7B4EBFE475CD16B1 /* LICENSE */,
+				EC7A77503DB3C2D9D9D4BD754B8960EB /* README.md */,
+				F4DDB0A57CD3AA36B79CEA34DBA633FD /* SYZAliPaySDK.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				C3DBEF879E51D747103C5F506B010309 /* Development Pods */,
+				24002A6670E6882ECD6250D3E60F9CB2 /* Frameworks */,
+				0A0B2DD033FB6148D8B52A1231EF1BDC /* Products */,
+				ED4783ADD5A3C9BD1EC3C6058BA7F2BF /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		802948A786A4C076312B9800B1B950AA /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				B28F3D57B5347A94914BF8A3E7A16DB5 /* CFNetwork.framework */,
+				327421D25DCA3348DD5FDC1AD255A31C /* CoreGraphics.framework */,
+				881F64EAEFF80F0858BDE8CE62D4DA7E /* CoreMotion.framework */,
+				84FA56489864DBEEEF01602FFFF71861 /* CoreTelephony.framework */,
+				8291639372CEDEDEA680CC38036686CB /* CoreText.framework */,
+				43A9B90CECF619E71DEF53EADDF29902 /* Foundation.framework */,
+				937E9D148ED6A479E251337F289FD78A /* QuartzCore.framework */,
+				FA5B021E05129CE85E3267C4C25180A6 /* SystemConfiguration.framework */,
+				0613A582A8F6C38F1C86436F5921605B /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		8B61C2DAECD160F8E5B30D46B02D20E8 /* SYZAliPaySDK */ = {
+			isa = PBXGroup;
+			children = (
+				9D1CC8268A619A3BF803169ED88BE6FE /* Order.h */,
+				9634BB1B63BCF86C3AE9977C97C0E31C /* Order.m */,
+				F9A68E7B84C7001066FBE03B56DF6D48 /* Product.h */,
+				B55A5EC77A69F936EE76D534C6C74228 /* Product.m */,
+				C69001DCD7AB62D86554258A8A768A46 /* Frameworks */,
+				719AAFE0732A14815AC4943359CB19C8 /* Pod */,
+				4AA931701F5193EFDE7B02BDA0AD04A9 /* Resources */,
+				DBB61A2BBF3ABCFE9E90F48BD7574AD6 /* Support Files */,
+			);
+			name = SYZAliPaySDK;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		9B1CCE23AD4BC49E43C39D5F1A889AA0 /* Pods-SYZAliPaySDK_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				7FE04278300D16656626521CD172594E /* Info.plist */,
+				BDA5122B8B9827EF3EAD1A2D1B7B6C5A /* Pods-SYZAliPaySDK_Tests.modulemap */,
+				94585418274708A5450D5629F93F8F3C /* Pods-SYZAliPaySDK_Tests-acknowledgements.markdown */,
+				89F5242C18489A044B42EA7F289F266A /* Pods-SYZAliPaySDK_Tests-acknowledgements.plist */,
+				BED612792AAA69C39C361F45320A8B45 /* Pods-SYZAliPaySDK_Tests-dummy.m */,
+				8F2A8FE130510F477F6BBA60F45A7B6C /* Pods-SYZAliPaySDK_Tests-frameworks.sh */,
+				5182793146A332C404416F41981EA6B6 /* Pods-SYZAliPaySDK_Tests-resources.sh */,
+				01F43844EF6C84EF3A183E37E682F9AB /* Pods-SYZAliPaySDK_Tests-umbrella.h */,
+				BA0C8326BDB0ADCF5C885CD67D142F96 /* Pods-SYZAliPaySDK_Tests.debug.xcconfig */,
+				FF935912B347D12D3483082074CC8B92 /* Pods-SYZAliPaySDK_Tests.release.xcconfig */,
+			);
+			name = "Pods-SYZAliPaySDK_Tests";
+			path = "Target Support Files/Pods-SYZAliPaySDK_Tests";
+			sourceTree = "<group>";
+		};
+		B267C31D52130225804762A40D469714 /* Pods-SYZAliPaySDK_Example */ = {
+			isa = PBXGroup;
+			children = (
+				6AE6D217235D3D2E2222D10D72BEC16C /* Info.plist */,
+				22D5D94480AEEEAAAF49E6BACBAF4939 /* Pods-SYZAliPaySDK_Example.modulemap */,
+				C3013B8F56BDE2003855D08619D94B5E /* Pods-SYZAliPaySDK_Example-acknowledgements.markdown */,
+				DBFC23CFB42F05AE71CA29734FBA34CA /* Pods-SYZAliPaySDK_Example-acknowledgements.plist */,
+				1F00CBF82E738A5D289D18DB635E23FA /* Pods-SYZAliPaySDK_Example-dummy.m */,
+				A50859FC5389E9895D10BA3C84730303 /* Pods-SYZAliPaySDK_Example-frameworks.sh */,
+				944D14BB97D4BBB7951E39E405D8F3A4 /* Pods-SYZAliPaySDK_Example-resources.sh */,
+				5F99B6E57E0A6277DEC1D78C8B3B887D /* Pods-SYZAliPaySDK_Example-umbrella.h */,
+				CBB19812C5734388912956D3810EA6B6 /* Pods-SYZAliPaySDK_Example.debug.xcconfig */,
+				9D90726AB340EAD40C2B6A81BBE3348B /* Pods-SYZAliPaySDK_Example.release.xcconfig */,
+			);
+			name = "Pods-SYZAliPaySDK_Example";
+			path = "Target Support Files/Pods-SYZAliPaySDK_Example";
+			sourceTree = "<group>";
+		};
+		C3DBEF879E51D747103C5F506B010309 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8B61C2DAECD160F8E5B30D46B02D20E8 /* SYZAliPaySDK */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		C69001DCD7AB62D86554258A8A768A46 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C4FF6AC771D8C254A2E9EC8BBA8D476 /* AlipaySDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DBB61A2BBF3ABCFE9E90F48BD7574AD6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1B55FAE1C28306F0EA61C4DD1FB48FD2 /* Info.plist */,
+				9D5396032773DC1DACC44EFD45FAD93B /* SYZAliPaySDK.modulemap */,
+				5070FD0B52DDC82F4DCCE4E55ECEA294 /* SYZAliPaySDK.xcconfig */,
+				E16256EB568E20D246A237289FA86AC5 /* SYZAliPaySDK-dummy.m */,
+				758B7FEF503685B3AADFBF0F9A25DCC1 /* SYZAliPaySDK-prefix.pch */,
+				834B09A737A96D7E3EF04A69D0866954 /* SYZAliPaySDK-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/SYZAliPaySDK";
+			sourceTree = "<group>";
+		};
+		ED4783ADD5A3C9BD1EC3C6058BA7F2BF /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B267C31D52130225804762A40D469714 /* Pods-SYZAliPaySDK_Example */,
+				9B1CCE23AD4BC49E43C39D5F1A889AA0 /* Pods-SYZAliPaySDK_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		32A1E1860904A33A287EA5A43A9E7DBB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				466F83345E402353CF485C5FAFE5BA85 /* Pods-SYZAliPaySDK_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69239ADCDCA9AC545A14504C9F299DA3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBE6B1676D5B57E541838BD58DA5F764 /* Pods-SYZAliPaySDK_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A42F1E09CBF8D022B9741826458EC8E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2DD98598B287D5715B13DC36AA85484 /* Order.h in Headers */,
+				98107E75902A11558E02B52C751C3E09 /* Product.h in Headers */,
+				F2451AE1BBA66699E5410F4F5C13E1C7 /* SYZAliPaySDK-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0ED5958627FE44227D68B9CADF7A2D1F /* SYZAliPaySDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB46F58B5819F3AE64030230E47EE9F9 /* Build configuration list for PBXNativeTarget "SYZAliPaySDK" */;
+			buildPhases = (
+				CAE555F1C9A540A652E6269D37D1E72C /* Sources */,
+				43E0C3E8DBBE0BF4D0104F46EB818A45 /* Frameworks */,
+				6A42F1E09CBF8D022B9741826458EC8E /* Headers */,
+				07DFC18F4F943CA4F0CEAE9948DE43AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SYZAliPaySDK;
+			productName = SYZAliPaySDK;
+			productReference = 019650DB14DE246028D37BFCC9E2E440 /* SYZAliPaySDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		15A170ED61E965D01D32B07C7CC80FFB /* Pods-SYZAliPaySDK_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29FAE21AC2847929E40277606DBAF312 /* Build configuration list for PBXNativeTarget "Pods-SYZAliPaySDK_Tests" */;
+			buildPhases = (
+				25B5B2FB88FFDC5588CD7911BF4812E4 /* Sources */,
+				82817F2271732ED85CF3AFC0296AE1EB /* Frameworks */,
+				32A1E1860904A33A287EA5A43A9E7DBB /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-SYZAliPaySDK_Tests";
+			productName = "Pods-SYZAliPaySDK_Tests";
+			productReference = 4EE03D027C2E38BEE4044C64BC913226 /* Pods_SYZAliPaySDK_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8FBF2AB5183CCD3806142366E45FBEEF /* Pods-SYZAliPaySDK_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 425F013490AF6CD2B24AD32ACAC71637 /* Build configuration list for PBXNativeTarget "Pods-SYZAliPaySDK_Example" */;
+			buildPhases = (
+				8B13A32CD7BAD14A96EC6C25BD68470E /* Sources */,
+				F28E21AA164A6C53785B7E29F34F868B /* Frameworks */,
+				69239ADCDCA9AC545A14504C9F299DA3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				92CDB0136CC79191BD31A37620124139 /* PBXTargetDependency */,
+			);
+			name = "Pods-SYZAliPaySDK_Example";
+			productName = "Pods-SYZAliPaySDK_Example";
+			productReference = F2FD085B7813EA0DBA55CB76CDCDA6FB /* Pods_SYZAliPaySDK_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 0A0B2DD033FB6148D8B52A1231EF1BDC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8FBF2AB5183CCD3806142366E45FBEEF /* Pods-SYZAliPaySDK_Example */,
+				15A170ED61E965D01D32B07C7CC80FFB /* Pods-SYZAliPaySDK_Tests */,
+				0ED5958627FE44227D68B9CADF7A2D1F /* SYZAliPaySDK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		07DFC18F4F943CA4F0CEAE9948DE43AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3926080228870D1328BD366A09E9974 /* AlipaySDK.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		25B5B2FB88FFDC5588CD7911BF4812E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				279C744B3B75AF72101D3D9BEAF1DC37 /* Pods-SYZAliPaySDK_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B13A32CD7BAD14A96EC6C25BD68470E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F9C64BEF0C4EB01C71E546DADF66199 /* Pods-SYZAliPaySDK_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAE555F1C9A540A652E6269D37D1E72C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18681AD9B2D3ED72089A21E9FCE1C8DA /* Order.m in Sources */,
+				E963C57216F2D7DEB5918A0908280EE5 /* Product.m in Sources */,
+				F15B7DE9D2A02745A96715F70A849E29 /* SYZAliPaySDK-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		92CDB0136CC79191BD31A37620124139 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SYZAliPaySDK;
+			target = 0ED5958627FE44227D68B9CADF7A2D1F /* SYZAliPaySDK */;
+			targetProxy = 07166312FA50EBCC084DAF4A1F782FE4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		24175F9A23CBB216D49D72DB27611D1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5070FD0B52DDC82F4DCCE4E55ECEA294 /* SYZAliPaySDK.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SYZAliPaySDK/SYZAliPaySDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SYZAliPaySDK/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SYZAliPaySDK/SYZAliPaySDK.modulemap";
+				PRODUCT_NAME = SYZAliPaySDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		299CA8CCE11F75C7C4550AC2E23A8002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D90726AB340EAD40C2B6A81BBE3348B /* Pods-SYZAliPaySDK_Example.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SYZAliPaySDK_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SYZAliPaySDK_Example/Pods-SYZAliPaySDK_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SYZAliPaySDK_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		44506BA8F56A779D01CB54778E22E229 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBB19812C5734388912956D3810EA6B6 /* Pods-SYZAliPaySDK_Example.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SYZAliPaySDK_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SYZAliPaySDK_Example/Pods-SYZAliPaySDK_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SYZAliPaySDK_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A6922E675EA561959209BE53DEF4DC13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF935912B347D12D3483082074CC8B92 /* Pods-SYZAliPaySDK_Tests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SYZAliPaySDK_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SYZAliPaySDK_Tests/Pods-SYZAliPaySDK_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SYZAliPaySDK_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C3E37FB098AE76440E29106ADBF00CEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		CB4FF6EF6AE0CF58DBA6DEBEBFB421AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA0C8326BDB0ADCF5C885CD67D142F96 /* Pods-SYZAliPaySDK_Tests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SYZAliPaySDK_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SYZAliPaySDK_Tests/Pods-SYZAliPaySDK_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SYZAliPaySDK_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DA03565BE765DB55C6448FB363A44481 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		F11EDC42F4BC39B23D6137C75E72FBB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5070FD0B52DDC82F4DCCE4E55ECEA294 /* SYZAliPaySDK.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SYZAliPaySDK/SYZAliPaySDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SYZAliPaySDK/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SYZAliPaySDK/SYZAliPaySDK.modulemap";
+				PRODUCT_NAME = SYZAliPaySDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		29FAE21AC2847929E40277606DBAF312 /* Build configuration list for PBXNativeTarget "Pods-SYZAliPaySDK_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB4FF6EF6AE0CF58DBA6DEBEBFB421AB /* Debug */,
+				A6922E675EA561959209BE53DEF4DC13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3E37FB098AE76440E29106ADBF00CEB /* Debug */,
+				DA03565BE765DB55C6448FB363A44481 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		425F013490AF6CD2B24AD32ACAC71637 /* Build configuration list for PBXNativeTarget "Pods-SYZAliPaySDK_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44506BA8F56A779D01CB54778E22E229 /* Debug */,
+				299CA8CCE11F75C7C4550AC2E23A8002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB46F58B5819F3AE64030230E47EE9F9 /* Build configuration list for PBXNativeTarget "SYZAliPaySDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24175F9A23CBB216D49D72DB27611D1C /* Debug */,
+				F11EDC42F4BC39B23D6137C75E72FBB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

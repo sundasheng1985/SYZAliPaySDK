@@ -1,0 +1,6 @@
+framework module SYZAliPaySDK {
+  umbrella header "SYZAliPaySDK-umbrella.h"
+
+  export *
+  module * { export * }
+}
